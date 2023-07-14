@@ -1,0 +1,80 @@
+<nav>
+  <div class="navbar">
+    <div class="logo">
+      <div class="hamburger-menu" (click)="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <img src="../../../assets/logo.png" alt="">
+    </div>
+    <div class="rightDiv">
+      <a href="">HOW IT WORKS</a>
+       <div class="dropdown">
+        <button class="dropbtn">WORKFLOWS
+          <fa-icon [icon]="filmIcon" ></fa-icon>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <a href="">DOWNLOAD</a>
+      <a href="">BLOG</a>
+      <a href="">SUPPORT</a>
+      <a href="">SHOP</a>
+      <a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcZJREFUSEuVVcFRxDAMlNIIJUApdHHhx4Pw5n25f1IGrdABNBIzVmRrHck5yOPOYzte72q1YcoPE1GSkT44oWP5Y2JKwdbefiK2pRYF592heA0HfDhH108YBASRtmPf7s/L8qR53EXKv4WXjHUKx07XVqIs4jCtcvYOkA+5jknPMBxdzC+UjTLWS9gY67ePuQFABrg3uLWBFer1mkpVAd7XXDq9mAIYA6WMcvlL7moGOCGD1qGB7QKAO7Xel9GOab5oN+zGrAVqnV+lQAZYuFzg0lYAQLTNYyoFPPi2uguLLJNY8NIfWuBTBgagbFzBUbOWMU9LbnntfNgnDAIX9eR3Ev2dgR1Z/NwFuY5SLAFTRKkBRFh9V7r5IEUGOMvC3KDHzpdLNQCq1zZfqkTO42emb+gxDdNiLsK1uAZBmjm9sMgaE14iJuuDXsA1aeDLopYVBl4iTdR/SIG9gq81NcDvQY3sg6au6e5Y2ZzHGBXC4JuIHkJL9pj5QPziaX3STLU0zRPp9vJMW/ogpsdeE8X9UNP3hwZ+Hd6Wz5pFmIiBOUSdno9M3jZ9xVMlKnrBfNZchT6iYypjjkEi978BMQPwYfFkIMcvLdn6HnVmGbAAAAAASUVORK5CYII="/></a>
+      <div class="dropdown">
+        <button class="dropbtn">WORKFLOWS
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar" [ngClass]="{'show': showMenu}">
+    <div class="sidebar-icon">
+      <a (click)="toggleMenu()">X</a>
+    </div>
+    <div class="sidebar-family">
+      <a (click)="selecction = 1">Product</a>
+      <a (click)="selecction = 2">Templates</a>
+      <a (click)="selecction = 3">Pricing</a>
+      <a (click)="selecction = 4">Reviews</a>
+    </div>
+    <div class="sidebar-info">
+      <div *ngIf="selecction === 1">
+        <a>Lorem ipsum dolor sit.</a>
+        <a>CLorem ipsum dolor sit.</a>
+        <a>Lorem ipsum dolor sit.</a>
+        <a>Lorem ipsum dolor sit.</a>
+      </div>
+      <div *ngIf="selecction === 2">
+        <a>Lorem ipsum dolor sit.</a>
+        <a>CLorem ipsum dolor sit.</a>
+        <a>Lorem ipsum dolor sit.</a>
+      </div>
+      <div *ngIf="selecction === 3">
+        <a>Lorem ipsum dolor sit.</a>
+        <a>CLorem ipsum dolor sit.</a>
+        <a>Lorem ipsum dolor sit.</a>
+        <a>Lorem ipsum dolor sit.</a>
+        <a href="">Lorem ipsum dolor sit amet consectetur adipisicing.</a><a href="">Odit quo minus ducimus, voluptates
+          exercitationem dicta!</a>
+      </div>
+      <div *ngIf="selecction === 4">
+        <a>Lorem ipsum dolor sit.</a>
+      </div>
+
+
+    </div>
+
+
+  </div>
+</nav>

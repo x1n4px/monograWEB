@@ -1,0 +1,55 @@
+
+
+  <div class="container">
+    <section id="cabecera">
+      <div class="content">
+        <h1 id="titulo">A CONSOLE FOR EVERY WORKFLOW</h1>
+        <h2 id="subtitulo">Discover the perfect console for yours</h2>
+      </div>
+    </section>
+
+
+  <section id="product4">
+    <div class="cardConteiner">
+      <div class="card" *ngFor="let product of products.slice(0,4)">
+        <img [src]="product.image" >
+        <div class="cardRow">
+          <span id="productName">{{product.name}}</span>
+          <span id="productPrice">{{product.price}}</span>
+        </div>
+        <span id="productDescription">{{product.description}}</span>
+
+        <div class="bandera" *ngIf="product.preorder">
+          PRE-ORDER
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="images">
+
+  </section>
+
+
+  <section id="product4">
+    <div class="cardConteiner">
+      <div class="card3" *ngFor="let product of products">
+        <img [src]="product.image" >
+        <div class="cardRow">
+          <span id="productName">{{product.name}}</span>
+          <span id="productPrice">{{product.price}}</span>
+        </div>
+
+        <div class="bandera" *ngIf="product.preorder">
+          PRE-ORDER
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+</div>
+

@@ -1,0 +1,154 @@
+
+.container {
+  width: 100%;
+   overflow: hidden;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  background-color: #f1eeef;
+}
+
+#cabecera {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../../assets/shop_cta_xl_896f6b8270.jpg');
+  background-size: cover;
+  background-position: center;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  text-align: center;
+  color: white;
+}
+
+#titulo {
+  font-size: 4em;
+  padding-inline: 400px;
+  color: #ff8b68;
+}
+
+#subtitulo {
+  font-size: 3em;
+  color: #ff8b68;
+}
+
+
+#product4 {
+  height: auto;
+  width: 100%;
+  padding-top: 30px;
+  }
+
+
+.cardConteiner {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #f1eeef;
+}
+
+.card {
+  width: calc(40% - 20px);
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.card3 {
+  width: calc(30% - 80px);
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.card img {
+  width: 100%;
+}
+
+.cardRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+#productName {
+  font-weight: 600;
+  color: #1a2456;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.5em;
+}
+
+#productPrice {
+  color: #444;
+  font-size: 1.2em;
+
+}
+
+#productDescription {
+  color: #444;
+  font-size: 1.2em;
+
+}
+
+
+.bandera {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  background-color: #ff8b68;
+  color: #333;
+  font-weight: 600;
+  font-size: small;
+  padding: 5px 15px;
+  z-index: 1;
+}
+
+#images {
+  background-image: url('../../../assets/section2.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vh;
+}
+
+
+@media (max-width: 768px) {
+  #titulo {
+    font-size: 3em;
+  }
+
+  #subtitulo {
+    font-size: 1.5em;
+  }
+
+  .card {
+    width: calc(100% - 20px);
+    height: 400px;
+  }
+
+  .card3 {
+    width: calc(100% - 20px);
+    height: 400px;
+  }
+
+
+#images {
+
+  background-size: 200% auto;
+
+}
+}
